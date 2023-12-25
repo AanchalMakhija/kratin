@@ -1,1 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medication & Exercise Reminder</title>
+    <link rel="stylesheet" href="styles.css">
+     </head>
+      <body>
+      <header>
+        <h1>Welcome Mrs Sunita!!!!!!</h1>
+         </header>
+      <main>
+<div>
+           <section id="login-section">
+            <h2>Login</h2>
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="button" id="login-button">Login</button>
+            <p id="error-message" style="color: red;"></p>
+        </form>
+</div>
+        </section>
+        
+        <section id="home-section" style="display:none;">
+            
+            <h2>Home</h2>
+            <!-- Inside #home-section -->
+            <div id="medication-reminders">
+                <h3>Medication Reminders</h3>
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Medication Name</th>
+                            <th>Current Time</th>
+                        </tr>
+                    </thead>
+                    <tbody id="medication-list" class="checkbox-list">
+                        
+                    </tbody>
+                </table>
+            </div>
+
+<div id="exercise-reminders">
+    <h3>Exercise Reminders</h3>
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th>Exercise Name</th>
+                <th>Time</th>
+            </tr>
+        </thead>
+        <tbody id="exercise-list" class="checkbox-list">
+            <!-- Exercise reminders will be displayed here -->
+        </tbody>
+    </table>
+</div>
+      </section>
+    </main>
+    <script src="main.js"></script>
+   
+</body>
+</html>
 
