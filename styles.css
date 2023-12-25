@@ -1,0 +1,184 @@
+/* Add styles for the page background */
+body {
+    background-color: #011010eb; /* Set your desired background color */
+    background:linear-gradient(#002a32,#000606);
+    font-family: 'Times New Roman', Times, serif, sans-serif; /* Set a default font-family for the entire page */
+    margin: 20px;
+    padding: 50px;
+    padding-inline-start: 10%;
+
+        
+}
+
+header,.box {
+    border: 20px groove #000606;
+    background-color: #042a33f1;
+    color: #eefeffd2;
+    text-align: center;
+    padding: 1em 0;
+    padding-left: -200%;
+    padding-right: -200%;
+    box-shadow: 0 0 10px rgba(8, 148, 224, 0.989);
+    margin-left: 100px;
+    margin-right: 100px;
+    -webkit-animation:text;
+    -webkit-text-fill-color: #b5dbda;
+    animation:gradient 3s linear infinite;
+}
+@keyframes gradient
+{
+    0% {background-position: 0%,75%;}
+    50% {background-position: 0%,75%;}
+ 100%{background-position: 0%,75%;}
+}
+
+main {
+    padding: 20px;
+}
+
+#login-section, #home-section {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #0e5a71e2;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(8, 148, 224, 0.989);
+    text-align: center; /* Center text within these sections */
+    text-decoration-color: #183047;
+    text-indent: 0cqh;
+    text-decoration-style: solid;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+button:hover {
+    background-color: #074b4a;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+   
+}
+
+
+#home-section {
+    background-color: #000606;
+    text-align: center;
+    -webkit-text-fill-color: #b5dbda;
+    position: relative;
+    overflow: hidden;
+    font-size: 100%;
+    padding-block:inherit;
+
+    
+}
+#home-section:hover {
+    background-color: #011515;
+    text-align: center;
+    -webkit-text-fill-color: #b5dbda;
+    position: relative;
+    overflow: hidden;
+    font-size: 100%;
+    padding-block:inherit;  
+}
+
+#medication-reminders,.box{
+    border:10px double #000606;
+    background-color: #183047;
+    border-radius: 40px;
+    margin-top: 40px;
+    padding: 40px;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(68, 130, 142, 0.932);
+    text-align: center; /* Center text within these sections */
+}
+
+h3 {
+    color: #567b8f;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 80px;
+    margin-top:80px;
+    margin-left: 10px;
+    margin-inline: 10px;
+}
+
+/* Add styles for live clock */
+.live-clock:nth-col,.box {
+    border: #002a32;
+    box-shadow: #002a32;
+    font-size: 180px;
+    font-weight: italic;
+    margin-bottom: 200px;
+    color: #b5081c;
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Clock icon styles */
+.clock-icon {
+    margin-right: 30px;
+}
+
+/* Additional styling for the tables */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    max-width: 20px;
+}
+
+.styled-table th, .styled-table td {
+    border: 1px solid #002a32;
+    padding: 10px;
+    text-align: center;
+}
+
+.styled-table th {
+    background-color: #0a222adc;
+    padding-left: 90px;
+    padding-right: 90px;
+    scroll-padding-top: 10px;
+}
+#exercise-reminders,.box{
+    border:10px double #000606;
+    background-color: #183047;
+    border-radius: 100px;
+    margin-top: 40px;
+    padding: 40px;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(68, 130, 142, 0.932);
+    text-align: center;
+    animation: fadeIn 1s cubic-bezier(1, -0.05, 1, 1.14); /* Add animation property */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
